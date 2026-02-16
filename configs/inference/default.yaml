@@ -1,0 +1,77 @@
+mask_path: "./model_ckpts/mask_64.png"
+mask_512_path: "./model_ckpts/mask_512.png"
+
+weight_dtype: fp16
+
+data:
+  n_motion_frames: 2
+  n_sample_frames: 12
+  source_image:
+    width: 512
+    height: 512
+  driving_audio:
+    sample_rate: 16000
+  export_video:
+    fps: 25
+
+inference_steps: 20
+cfg_scale: 3.5
+
+denoising_unet_path: "/workspace/echomimic_speax/exp_output/stage2_330/modules/denoising_unet-2.pth"
+reference_unet_path: "/workspace/echomimic_speax/exp_output/stage2_330/modules/reference_unet-2.pth"
+# denoising_unet_path: "/workspace/echomimic_speax/exp_output/new/denoising_unet-new.pth"
+# reference_unet_path: "/workspace/echomimic_speax/exp_output/new/reference_unet-2000.pth"
+
+# denoising_unet_path: "/workspace/echomimic_speax/exp_output/denoising_unet.pth"
+# reference_unet_path: "/workspace/echomimic_speax/exp_output/reference_unet.pth"
+
+base_model_path: "./pretrained_weights/sd-image-variations-diffusers/"
+
+motion_module_path: "./pretrained_weights/motion_module.pth"
+
+audio_model_path: "./pretrained_weights/audio_processor/whisper_tiny.pt"
+
+vae:
+  model_path: "./pretrained_weights/sd-vae-ft-mse/"
+
+save_path: ./cache
+
+unet_additional_kwargs:
+  use_inflated_groupnorm: true
+  unet_use_cross_frame_attention: false 
+  unet_use_temporal_attention: false
+  use_motion_module: true
+  cross_attention_dim: 384
+  motion_module_resolutions:
+  - 1
+  - 2
+  - 4
+  - 8
+  motion_module_mid_block: true 
+  motion_module_decoder_only: false
+  motion_module_type: Vanilla
+  motion_module_kwargs:
+    num_attention_heads: 8
+    num_transformer_block: 1
+    attention_block_types:
+    - Temporal_Self
+    - Temporal_Self
+    temporal_position_encoding: true
+    temporal_position_encoding_max_len: 32
+    temporal_attention_dim_div: 1
+  
+
+enable_zero_snr: true
+
+noise_scheduler_kwargs:
+  beta_start: 0.00085
+  beta_end: 0.012
+  beta_schedule: "linear"
+  clip_sample: false
+  steps_offset: 1
+  ### Zero-SNR params
+  prediction_type: "v_prediction"
+  rescale_betas_zero_snr: True
+  timestep_spacing: "trailing"
+
+sampler: DDIM 
