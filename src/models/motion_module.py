@@ -60,10 +60,10 @@ class VanillaTemporalModule(nn.Module):
         b = 1
         f = 12
         c_64, c_32, c_16, c_8 = 320 ,640 ,1280, 1280
-        self.mask_64 = self.create_mask("./model_ckpts/mask_64.png", b, c_64, f)
-        self.mask_32 = self.create_mask("./model_ckpts/mask_32.png", b, c_32, f)
-        self.mask_16 = self.create_mask("./model_ckpts/mask_16.png", b, c_16, f)
-        self.mask_8 = self.create_mask("./model_ckpts/mask_8.png", b, c_8, f)
+        self.mask_64 = self.create_mask("./masks/mask_64.png", b, c_64, f)
+        self.mask_32 = self.create_mask("./masks/mask_32.png", b, c_32, f)
+        self.mask_16 = self.create_mask("./masks/mask_16.png", b, c_16, f)
+        self.mask_8 = self.create_mask("./masks/mask_8.png", b, c_8, f)
 
         self.temporal_transformer = TemporalTransformer3DModel(
             in_channels=in_channels,

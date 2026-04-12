@@ -143,17 +143,17 @@ class ReferenceAttentionControl:
                         **cross_attention_kwargs,
                     )
                 if MODE == "read":
-                    bank_feas = [
-                        rearrange(
-                            d.unsqueeze(1).repeat(1, video_length, 1, 1),
-                            "b t l c -> (b t) l c",
-                        )
-                        for d in self.bank
-                    ]
-
-                    # bank_feas = [d
+                    # bank_feas = [
+                    #     rearrange(
+                    #         d.unsqueeze(1).repeat(1, video_length, 1, 1),
+                    #         "b t l c -> (b t) l c",
+                    #     )
                     #     for d in self.bank
                     # ]
+
+                    bank_feas = [d
+                        for d in self.bank
+                    ]
 
                     modify_norm_hidden_states = torch.cat(
                         [norm_hidden_states] + bank_feas, dim=1

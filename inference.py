@@ -212,16 +212,6 @@ def inference_process(args: argparse.Namespace):
         torch.load(config.denoising_unet_path, map_location="cpu"),
     )
 
-    # pretrained_model = torch.load(os.path.join("./exp_output/denoising_unet.pth"),map_location="cpu",)
-    # weight_modules = ["motion_modules", "attn2", "norm2"]
-
-    # filtered_state_dict = {}
-    # for k, v in pretrained_model.items():
-    #     if any(trainable_mod in k for trainable_mod in weight_modules):
-    #         filtered_state_dict[k] = v
-
-    # m , u = denoising_unet.load_state_dict(filtered_state_dict, strict=False)
-
     # Freeze
     vae.requires_grad_(False)
     reference_unet.requires_grad_(False)

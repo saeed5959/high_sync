@@ -6,8 +6,8 @@ data:
   val_path: "./data/echo_train.json"
   # Margin of frame indexes between ref and tgt images
   sample_margin: 30
-  mask_path: "./model_ckpts/mask_64.png"
-  mask_512_path: "./model_ckpts/mask_512.png"
+  mask_path: "./masks/mask_64.png"
+  mask_512_path: "./masks/mask_512.png"
 
 solver:
   gradient_accumulation_steps: 1

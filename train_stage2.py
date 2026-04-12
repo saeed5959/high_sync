@@ -221,22 +221,8 @@ def log_validation(
     Returns:
         torch.Tensor: The tensor result of the validation.
     """
-    # ori_net = accelerator.unwrap_model(net)
-    # reference_unet = ori_net.reference_unet
-    # denoising_unet = ori_net.denoising_unet
 
     generator = torch.manual_seed(42)
-    # tmp_denoising_unet = copy.deepcopy(denoising_unet)
-    # k = 0
-    # for name, param in accelerator.unwrap_model(net).denoising_unet.named_parameters():
-    #     if "motion" in name:
-    #         k += 1
-    #         print(f"Layer: {name}")
-    #         print(f"Shape: {param.shape}")
-    #         print(f"Weights: {param.data}")
-        
-    #     if k>3:
-    #         break
 
     pipeline = FaceAnimatePipeline(
         vae=vae,
@@ -250,7 +236,6 @@ def log_validation(
     sample_idx = [np.random.randint(0, dataset_len-1) for _ in range(1)]
 
     for idx in sample_idx:
-        idx = 748
         sample = val_dataset[idx]
         same = sample["same"]
         video_path = sample["video_dir"]
@@ -387,14 +372,14 @@ def train_stage2_process(cfg: argparse.Namespace) -> None:
     stage1_ckpt_dir = cfg.stage1_ckpt_dir
     denoising_unet.load_state_dict(
         torch.load(
-            os.path.join(stage1_ckpt_dir, "denoising_unet-330000.pth"),
+            os.path.join(stage1_ckpt_dir, "denoising_unet-44000.pth"),
             map_location="cpu",
         ),
         strict=False,
     )
     reference_unet.load_state_dict(
         torch.load(
-            os.path.join(stage1_ckpt_dir, "reference_unet-330000.pth"),
+            os.path.join(stage1_ckpt_dir, "reference_unet-44000.pth"),
             map_location="cpu",
         ),
         strict=False,
@@ -413,9 +398,9 @@ def train_stage2_process(cfg: argparse.Namespace) -> None:
                 param.requires_grad_(True)
 
     # audio attention parames of denoising_unet should be updated
-    # for name, param in denoising_unet.named_parameters():
-    #     if ("attn2" in name) or ("norm2" in name):
-    #         param.requires_grad_(True)
+    for name, param in denoising_unet.named_parameters():
+        if ("attn2" in name) or ("norm2" in name):
+            param.requires_grad_(True)
 
     reference_control_writer = ReferenceAttentionControl(
         reference_unet,

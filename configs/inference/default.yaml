@@ -1,5 +1,5 @@
-mask_path: "./model_ckpts/mask_64.png"
-mask_512_path: "./model_ckpts/mask_512.png"
+mask_path: "./masks/mask_64.png"
+mask_512_path: "./masks/mask_512.png"
 
 weight_dtype: fp16
 
@@ -17,17 +17,12 @@ data:
 inference_steps: 20
 cfg_scale: 3.5
 
-denoising_unet_path: "/workspace/echomimic_speax/exp_output/stage2_330/modules/denoising_unet-2.pth"
-reference_unet_path: "/workspace/echomimic_speax/exp_output/stage2_330/modules/reference_unet-2.pth"
-# denoising_unet_path: "/workspace/echomimic_speax/exp_output/new/denoising_unet-new.pth"
-# reference_unet_path: "/workspace/echomimic_speax/exp_output/new/reference_unet-2000.pth"
-
-# denoising_unet_path: "/workspace/echomimic_speax/exp_output/denoising_unet.pth"
-# reference_unet_path: "/workspace/echomimic_speax/exp_output/reference_unet.pth"
+denoising_unet_path: "./pretrained_weights/denoising_unet-500.pth"
+reference_unet_path: "./pretrained_weights/reference_unet-500.pth"
 
 base_model_path: "./pretrained_weights/sd-image-variations-diffusers/"
 
-motion_module_path: "./pretrained_weights/motion_module.pth"
+motion_module_path: ""
 
 audio_model_path: "./pretrained_weights/audio_processor/whisper_tiny.pt"
 

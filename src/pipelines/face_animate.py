@@ -395,20 +395,20 @@ class FaceAnimatePipeline(DiffusionPipeline):
 
                     mid_index = int(len(context[0])/2)
 
-                    self.reference_unet(
-                        gt_encode[:,:,context[0][mid_index]].repeat(
-                            context_batch_size * (1), 1, 1, 1),
-                        torch.zeros_like(t),
-                        encoder_hidden_states=None,
-                        return_dict=False,
-                    )
-                    
                     # self.reference_unet(
-                    #     rearrange(gt_encode[0], "c f h w -> f c h w")[context[0]],
+                    #     gt_encode[:,:,context[0][mid_index]].repeat(
+                    #         context_batch_size * (1), 1, 1, 1),
                     #     torch.zeros_like(t),
                     #     encoder_hidden_states=None,
                     #     return_dict=False,
                     # )
+                    
+                    self.reference_unet(
+                        rearrange(gt_encode[0], "c f h w -> f c h w")[context[0]],
+                        torch.zeros_like(t),
+                        encoder_hidden_states=None,
+                        return_dict=False,
+                    )
 
 
                     reference_control_reader.update(reference_control_writer, do_classifier_free_guidance=do_classifier_free_guidance)
