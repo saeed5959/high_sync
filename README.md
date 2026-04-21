@@ -1,5 +1,5 @@
-<h1 align='center'>HIGH-SYNC : HIGH QUALITY LIP SYNC MODEL USING
-DIFFUSION MODEL</h1>
+<h1 align='center'>HighSync: High-Quality Lip Synchronization via
+Latent Diffusion Models</h1>
 
 <div align='center'>
     <a href='https://github.com/saeed_5959' target='_blank'>Saeed Firouzi</a><sup>1</sup>&emsp;
@@ -14,21 +14,23 @@ DIFFUSION MODEL</h1>
 
 
 ## Abstraction
-we propose High-Sync model as an end-to-end model for lip sync task which utilize diffusion
-structure for creating high quality videos of synced with the audio.
-Previous models struggle to create high quality images without artifact and if they succeed their
-syncing ability was not good.
-Going to create 512*512 resolution for lip sync model for the first time, has been done by this
-model which can be used in real production like movie industry which their videos are in high level
-of resolution.
-Solving the major issue of data leakage which was stopping previous model to go to the higher level
-of syncing was another success for this model.
-Thanks to training the model on a very various dataset , our proposed model can work in a wild
-situation like extreme head movement , bad and dark lightning and hand interrupted faces.
-Through a comprehensive evaluation tests which incorporates image quality and audio syncing , we
-demonstrated that our model can achieve to the high level of quality and syncing.
-We have provided more visualization and test videos and also the source code and the pretraining
-models which can be found at : www
+We present HighSync, an end-to-end diffusion-based
+framework for high-fidelity lip synchronization that generates
+photorealistic talking-face videos aligned with arbitrary input
+audio. Existing approaches consistently struggle to reconcile
+image quality with synchronization accuracy, producing either
+visually degraded outputs or temporally inconsistent lip move-
+ments. HighSync addresses both challenges simultaneously and,
+to our knowledge, is the first lip sync model to operate natively
+at 512×512 resolution, positioning it as a viable solution for
+professional production environments such as the film and broad-
+cast industries. Central to our approach is the identification and
+systematic elimination of a data leakage phenomenon that has
+silently undermined temporal modeling in prior work, preventing
+models from developing a genuine dependence on the audio
+signal. Comprehensive evaluations across both perceptual quality
+and synchronization accuracy metrics confirm that HighSync
+achieves state-of-the-art performance on both fronts.
 
 
 ## Model Structure
@@ -115,8 +117,8 @@ If you find our work useful for your research, please consider citing the paper 
 
 ```
 @misc{highsync,
-  title={HIGH-SYNC : HIGH QUALITY LIP SYNC MODEL USING
-DIFFUSION MODEL},
+  title={HighSync: High-Quality Lip Synchronization via
+Latent Diffusion Models},
   author={Saeed Firouzi},
   year={2026},
   eprint={},
