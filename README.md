@@ -2,7 +2,7 @@
 Latent Diffusion Models</h1>
 
 <div align='center'>
-    <a href='https://github.com/saeed_5959' target='_blank'>Saeed Firouzi</a><sup>1</sup>&emsp;
+    <a href='https://github.com/saeed5959' target='_blank'>Saeed Firouzi</a><sup>1</sup>&emsp;
 </div>
 
 <br>
