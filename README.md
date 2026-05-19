@@ -9,7 +9,8 @@ Latent Diffusion Models</h1>
 
 <div align='center'>
     <a href='https://huggingface.co/saeed-5959/high_sync'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
-    <a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+    <a href='https://arxiv.org/abs/2605.16918'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+    <a href='https://huggingface.co/datasets/saeed-5959/vfhq'><img src='https://img.shields.io/badge/Dataset-Hugging_Face-CFAFD4'></a>
 </div>
 
 
@@ -101,6 +102,17 @@ ffmpeg -i input.mp4 -r 25 out_25.mp4
   python -m inference --source_video "video_path.mp4" --driving_audio "audio_path.wav" --output "save_path.mp4"
 ```
 
+### Dataset
+We preprocessed 3 public datasets and put their clean videos in these links : 
+
+[VFHQ](https://huggingface.co/datasets/saeed-5959/vfhq)
+
+[Celebv-HQ](https://huggingface.co/datasets/saeed-5959/celebv_hq_head_talking)
+
+[HDTF](https://huggingface.co/datasets/saeed-5959/hdtf)
+
+Notice : thses videos has been preprocessed based on the paper appraoch!
+
 ## 🙏🏻 Acknowledgements
 
 This work is mainly based on [EchoMimic](https://github.com/antgroup/echomimic) work.
@@ -111,21 +123,6 @@ We are also grateful to [V-Express](https://github.com/tencent-ailab/V-Express) 
 
 If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately.
 
-## 📒 Citation
-
-If you find our work useful for your research, please consider citing the paper :
-
-```
-@misc{highsync,
-  title={HighSync: High-Quality Lip Synchronization via
-Latent Diffusion Models},
-  author={Saeed Firouzi},
-  year={2026},
-  eprint={},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
-}
-```
 
 ## 🌟 Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=saeed_5959/highsync&type=Date)](https://star-history.com/#saeed_5959/highsync&Date)
