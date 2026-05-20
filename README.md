@@ -123,6 +123,16 @@ We are also grateful to [V-Express](https://github.com/tencent-ailab/V-Express) 
 
 If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately.
 
+## Citation
+```bibtex
+@article{daghigh2024highsync,
+  title={HighSync: High-Quality Lip Synchronization via Latent Diffusion Models},
+  author={Saeed Firouzi Daghigh and Majid Iranpour Mobarekeh and Mostafa Alavi and Mehdi Bagheri},
+  journal={arXiv preprint arXiv:2605.16918},
+  year={2026}
+}
+```
+
 
 ## 🌟 Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=saeed_5959/highsync&type=Date)](https://star-history.com/#saeed_5959/highsync&Date)
