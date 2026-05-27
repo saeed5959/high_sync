@@ -135,4 +135,4 @@ If we missed any open-source projects or related articles, we would like to comp
 
 
 ## 🌟 Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=saeed_5959/highsync&type=Date)](https://star-history.com/#saeed_5959/highsync&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=saeed5959/high_sync&type=Date)](https://star-history.com/#saeed5959/high_sync&Date)
