@@ -48,25 +48,10 @@ achieves state-of-the-art performance on both fronts.
 </tr>
 <tr>
     <td width="50%" style="border: none">
-        <video controls loop src="./imgs/s17_main.mp4" muted="false"></video>
+        <video controls loop src="https://github.com/saeed5959/high_sync/imgs/s17_main.mp4" muted="false"></video>
     </td>
     <td width="50%" style="border: none">
-        <video controls loop src="./imgs/s17_synced.mp4" muted="false"></video>
-    </td>
-</tr>
-</table>
-
-<table class="center">
-<tr>
-    <th width="50%">Main Video</th>
-    <th width="50%">Synchronized Video</th>
-</tr>
-<tr>
-    <td width="50%" style="border: none">
-        <video controls loop src="./imgs/s35_main.mp4" muted="false"></video>
-    </td>
-    <td width="50%" style="border: none">
-        <video controls loop src="./imgs/s35_synced.mp4" muted="false"></video>
+        <video controls loop src="https://github.com/saeed5959/high_sync/imgs/s17_synced.mp4" muted="false"></video>
     </td>
 </tr>
 </table>
@@ -78,10 +63,25 @@ achieves state-of-the-art performance on both fronts.
 </tr>
 <tr>
     <td width="50%" style="border: none">
-        <video controls loop src="./imgs/s45_main.mp4" muted="false"></video>
+        <video controls loop src="https://github.com/saeed5959/high_sync/imgs/s35_main.mp4" muted="false"></video>
     </td>
     <td width="50%" style="border: none">
-        <video controls loop src="./imgs/s45_synced.mp4" muted="false"></video>
+        <video controls loop src="https://github.com/saeed5959/high_sync/imgs/s35_synced.mp4" muted="false"></video>
+    </td>
+</tr>
+</table>
+
+<table class="center">
+<tr>
+    <th width="50%">Main Video</th>
+    <th width="50%">Synchronized Video</th>
+</tr>
+<tr>
+    <td width="50%" style="border: none">
+        <video controls loop src="https://github.com/saeed5959/high_sync/imgs/s45_main.mp4" muted="false"></video>
+    </td>
+    <td width="50%" style="border: none">
+        <video controls loop src="https://github.com/saeed5959/high_sync/imgs/s45_synced.mp4" muted="false"></video>
     </td>
 </tr>
 </table>
