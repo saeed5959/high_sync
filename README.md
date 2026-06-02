@@ -48,25 +48,10 @@ achieves state-of-the-art performance on both fronts.
 </tr>
 <tr>
     <td width="50%" style="border: none">
-        <video controls loop src="https://raw.githubusercontent.com/saeed5959/high_sync/assets/s17_main.mp4" muted="false"></video>
+        <video controls loop src="https://github.com/user-attachments/assets/abc13e1b-b1ba-49bc-af98-84f57302b3d8" muted="false"></video>
     </td>
     <td width="50%" style="border: none">
-        <video controls loop src="https://raw.githubusercontent.com//high_sync/assets/s17_synced.mp4" muted="false"></video>
-    </td>
-</tr>
-</table>
-
-<table class="center">
-<tr>
-    <th width="50%">Main Video</th>
-    <th width="50%">Synchronized Video</th>
-</tr>
-<tr>
-    <td width="50%" style="border: none">
-        <video controls loop src="https://raw.githubusercontent.com/saeed5959/high_sync/assets/s35_main.mp4" muted="false"></video>
-    </td>
-    <td width="50%" style="border: none">
-        <video controls loop src="https://raw.githubusercontent.com/saeed5959/high_sync/assets/s35_synced.mp4" muted="false"></video>
+        <video controls loop src="https://github.com/user-attachments/assets/423d4886-b43b-4c11-910d-1023780c9fc6" muted="false"></video>
     </td>
 </tr>
 </table>
@@ -78,10 +63,25 @@ achieves state-of-the-art performance on both fronts.
 </tr>
 <tr>
     <td width="50%" style="border: none">
-        <video controls loop src="https://raw.githubusercontent.com/saeed5959/high_sync/assets/s45_main.mp4" muted="false"></video>
+        <video controls loop src="https://github.com/user-attachments/assets/905fe071-12bf-4205-ba4b-8f818c7aa944" muted="false"></video>
     </td>
     <td width="50%" style="border: none">
-        <video controls loop src="https://raw.githubusercontent.com/saeed5959/high_sync/assets/s45_synced.mp4" muted="false"></video>
+        <video controls loop src="https://github.com/user-attachments/assets/535a30ae-60ee-4082-8255-b608ffe9a0b5" muted="false"></video>
+    </td>
+</tr>
+</table>
+
+<table class="center">
+<tr>
+    <th width="50%">Main Video</th>
+    <th width="50%">Synchronized Video</th>
+</tr>
+<tr>
+    <td width="50%" style="border: none">
+        <video controls loop src="https://github.com/user-attachments/assets/22ccb629-1915-4044-88c6-9f4202990686" muted="false"></video>
+    </td>
+    <td width="50%" style="border: none">
+        <video controls loop src="https://github.com/user-attachments/assets/028a352e-2a64-4a3f-93dd-b30b34902d9f" muted="false"></video>
     </td>
 </tr>
 </table>
