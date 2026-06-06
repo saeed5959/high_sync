@@ -110,7 +110,7 @@ achieves state-of-the-art performance on both fronts.
 apt-get install ffmpeg
 ```
 
-### Download pretrained weights
+### Download [pretrained weights](https://huggingface.co/saeed-5959/high_sync)
 
 ```shell
 git lfs install
