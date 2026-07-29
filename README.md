@@ -181,6 +181,12 @@ If we missed any open-source projects or related articles, we would like to comp
 }
 ```
 
+## Star History
 
-## 🌟 Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=saeed5959/high_sync&type=Date)](https://star-history.com/#saeed5959/high_sync&Date)
+<a href="https://www.star-history.com/?type=date&repos=saeed5959%2Fhigh_sync">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=saeed5959/high_sync&type=date&theme=dark&legend=top-left&sealed_token=p7-zgaLNqIUHd7yPDyWsEDHUCBJHds7CRyV9ApYNiwnuGPfM5_svPAUHtwVsjAalTBguO5jXe77ZsUkmDfW-84w0I51isKHtWhMfQC84_huq3XPWj7kKeg" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=saeed5959/high_sync&type=date&legend=top-left&sealed_token=p7-zgaLNqIUHd7yPDyWsEDHUCBJHds7CRyV9ApYNiwnuGPfM5_svPAUHtwVsjAalTBguO5jXe77ZsUkmDfW-84w0I51isKHtWhMfQC84_huq3XPWj7kKeg" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=saeed5959/high_sync&type=date&legend=top-left&sealed_token=p7-zgaLNqIUHd7yPDyWsEDHUCBJHds7CRyV9ApYNiwnuGPfM5_svPAUHtwVsjAalTBguO5jXe77ZsUkmDfW-84w0I51isKHtWhMfQC84_huq3XPWj7kKeg" />
+ </picture>
+</a>
